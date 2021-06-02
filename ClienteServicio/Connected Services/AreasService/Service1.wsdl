@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.56.104:70/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.56.104:70/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.56.104:70/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WebServiceApp.DTO" />
+      <xsd:import schemaLocation="http://192.168.56.104:70/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WebServiceApp.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_ListTriangles_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListTriangles" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListTriangles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListTrianglesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListSquares_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListSquares" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListSquares_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListSquaresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListRings_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListRings" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListRings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListRingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListRectangles_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListRectangles" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListRectangles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListRectanglesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateTriangle_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTriangle" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateTriangle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTriangleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateSquare_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSquare" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateSquare_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSquareResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateRing_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRing" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateRing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateRectangle_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRectangle" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateRectangle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRectangleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTriangleById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTriangleById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTriangleById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTriangleByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSquareById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSquareById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSquareById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSquareByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRingById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRingById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRingById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRingByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRectangleById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRectangleById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRectangleById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRectangleByIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="ListTriangles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListTriangles" message="tns:IService1_ListTriangles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListTrianglesResponse" message="tns:IService1_ListTriangles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSquares">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListSquares" message="tns:IService1_ListSquares_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListSquaresResponse" message="tns:IService1_ListSquares_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListRings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListRings" message="tns:IService1_ListRings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListRingsResponse" message="tns:IService1_ListRings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListRectangles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListRectangles" message="tns:IService1_ListRectangles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListRectanglesResponse" message="tns:IService1_ListRectangles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTriangle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateTriangle" message="tns:IService1_CreateTriangle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateTriangleResponse" message="tns:IService1_CreateTriangle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSquare">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateSquare" message="tns:IService1_CreateSquare_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateSquareResponse" message="tns:IService1_CreateSquare_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRing">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateRing" message="tns:IService1_CreateRing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateRingResponse" message="tns:IService1_CreateRing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRectangle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateRectangle" message="tns:IService1_CreateRectangle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateRectangleResponse" message="tns:IService1_CreateRectangle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTriangleById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTriangleById" message="tns:IService1_GetTriangleById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTriangleByIdResponse" message="tns:IService1_GetTriangleById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSquareById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSquareById" message="tns:IService1_GetSquareById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetSquareByIdResponse" message="tns:IService1_GetSquareById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRingById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetRingById" message="tns:IService1_GetRingById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetRingByIdResponse" message="tns:IService1_GetRingById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRectangleById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetRectangleById" message="tns:IService1_GetRectangleById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetRectangleByIdResponse" message="tns:IService1_GetRectangleById_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListTriangles">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListTriangles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSquares">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListSquares" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRings">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListRings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRectangles">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListRectangles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTriangle">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateTriangle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSquare">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateSquare" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRing">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateRing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRectangle">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateRectangle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTriangleById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTriangleById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSquareById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSquareById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRingById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetRingById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRectangleById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetRectangleById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://192.168.56.104:70/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
