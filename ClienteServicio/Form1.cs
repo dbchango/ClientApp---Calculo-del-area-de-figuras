@@ -76,6 +76,7 @@ namespace ClienteServicio
                 var temp = Client.CreateSquare(Square);
                 txtRespuestaCuadrado.Text = temp.Area.ToString();
                 txtRespuestaCuadradoPer.Text = temp.Perimeter.ToString();
+                MessageBox.Show("Proceso completado satisfactoriamente.");
             }
             catch(Exception ex)
             {
@@ -106,8 +107,10 @@ namespace ClienteServicio
                 var temp = Client.CreateTriangle(Triangle);
                 txtTriang.Text = temp.Area.ToString();
                 txtTriangPer.Text = temp.Perimeter.ToString();
+                MessageBox.Show("Proceso completado satisfactoriamente.");
 
-            }catch(Exception ex)
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -128,6 +131,7 @@ namespace ClienteServicio
                 var temp = Client.CreateRing(Ring);
                 txtRespCirc.Text = temp.Area.ToString();
                 txtRespCircPer.Text = temp.Perimeter.ToString();
+                MessageBox.Show("Proceso completado satisfactoriamente.");
             }
             catch(Exception ex)
             {
@@ -166,7 +170,9 @@ namespace ClienteServicio
                 var temp = Client.CreateRectangle(Rectangle);
                 txtRespRect.Text = temp.Area.ToString();
                 txtRespRectPer.Text = temp.Perimeter.ToString();
-            }catch(Exception ex)
+                MessageBox.Show("Proceso completado satisfactoriamente.");
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
