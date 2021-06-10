@@ -19,15 +19,15 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://192.168.56.104:70/Service1.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://circleservice.azurewebsites.net/Service1.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="e06c105a-08a8-441f-b1d0-768d8945d4d9" SourceId="1" SourceUrl="http://192.168.56.104:70/Service1.svc?wsdl" />
-    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="fad14191-872a-4ebd-aecd-a7fa388151b0" SourceId="1" SourceUrl="http://192.168.56.104:70/Service1.svc?disco" />
-    <MetadataFile FileName="Service13.xsd" MetadataType="Schema" ID="1379c917-da6c-4465-a58a-219f87da15d6" SourceId="1" SourceUrl="http://192.168.56.104:70/Service1.svc?xsd=xsd3" />
-    <MetadataFile FileName="Service11.xsd" MetadataType="Schema" ID="a03dbdee-211d-4f80-adcc-0ec2519a6018" SourceId="1" SourceUrl="http://192.168.56.104:70/Service1.svc?xsd=xsd2" />
-    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="f31b310c-59c7-43a5-a4b2-a9eb531b3c1d" SourceId="1" SourceUrl="http://192.168.56.104:70/Service1.svc?xsd=xsd1" />
-    <MetadataFile FileName="Service12.xsd" MetadataType="Schema" ID="c37aa0f2-93a5-4a09-9a4b-11a968419dce" SourceId="1" SourceUrl="http://192.168.56.104:70/Service1.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service14.xsd" MetadataType="Schema" ID="eb4cd364-10ac-4bde-9080-9ce84a0f67eb" SourceId="1" SourceUrl="https://circleservice.azurewebsites.net/Service1.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service11.disco" MetadataType="Disco" ID="b6e3b39f-fd7e-4cb8-967c-240664343976" SourceId="1" SourceUrl="https://circleservice.azurewebsites.net/Service1.svc?disco" />
+    <MetadataFile FileName="Service11.wsdl" MetadataType="Wsdl" ID="97c2fa15-8ee9-4e5f-a56e-6e15f37729fc" SourceId="1" SourceUrl="https://circleservice.azurewebsites.net/Service1.svc?wsdl" />
+    <MetadataFile FileName="Service141.xsd" MetadataType="Schema" ID="c935cc1a-1589-4ce0-afdd-fb1a8bf6ca2e" SourceId="1" SourceUrl="https://circleservice.azurewebsites.net/Service1.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service142.xsd" MetadataType="Schema" ID="571b607e-b725-4d12-929f-e9778e39978f" SourceId="1" SourceUrl="https://circleservice.azurewebsites.net/Service1.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service143.xsd" MetadataType="Schema" ID="45aa01dd-7514-4e2d-92af-3c35a7cec9c7" SourceId="1" SourceUrl="https://circleservice.azurewebsites.net/Service1.svc?xsd=xsd3" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

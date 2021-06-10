@@ -110,41 +110,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="ClienteServicio_TemporaryKey.pfx" />
-    <None Include="Connected Services\AreasService\ClienteServicio.AreasService.Rectangle.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\AreasService\ClienteServicio.AreasService.RectangleDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Connected Services\AreasService\ClienteServicio.AreasService.Ring.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\AreasService\ClienteServicio.AreasService.RingDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\AreasService\ClienteServicio.AreasService.Square.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\AreasService\ClienteServicio.AreasService.SquareDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\AreasService\ClienteServicio.AreasService.Triangle.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\AreasService\ClienteServicio.AreasService.TriangleDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\AreasService\Service1.wsdl" />
-    <None Include="Connected Services\AreasService\Service1.xsd">
+    <None Include="Connected Services\AreasService\Service11.wsdl" />
+    <None Include="Connected Services\AreasService\Service14.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\AreasService\Service11.xsd">
+    <None Include="Connected Services\AreasService\Service141.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\AreasService\Service12.xsd">
+    <None Include="Connected Services\AreasService\Service142.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\AreasService\Service13.xsd">
+    <None Include="Connected Services\AreasService\Service143.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">
@@ -165,9 +147,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\AreasService\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\AreasService\Service1.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\AreasService\configuration91.svcinfo" />
@@ -192,6 +171,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AreasService\Service11.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

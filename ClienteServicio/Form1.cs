@@ -14,11 +14,8 @@ namespace ClienteServicio
     {
         List<Panel> listaPaneles = new List<Panel>();
         int index;
-        AreasService.Service1Client Client = new AreasService.Service1Client();
-        AreasService.TriangleDTO Triangle = new AreasService.TriangleDTO();
-        AreasService.SquareDTO Square = new AreasService.SquareDTO();
+        AreasService.Service1Client Client = new AreasService.Service1Client("BasicHttpsBinding_IService1");
         AreasService.RingDTO Ring = new AreasService.RingDTO();
-        AreasService.RectangleDTO Rectangle = new AreasService.RectangleDTO();
 
         public Form1()
         {
@@ -64,26 +61,6 @@ namespace ClienteServicio
             listaPaneles[0].BringToFront();
         }
 
-        private void bunifuFlatButton5_Click(object sender, EventArgs e)
-        {
-            lblRespuestaCuadrado.Visible = true;
-            txtRespuestaCuadrado.Visible = true;
-            txtRespuestaCuadradoPer.Visible = true;
-            lblRespuestaCuadrado2.Visible = true;
-
-            try {
-                Square.Side = (double)nudLado.Value;
-                var temp = Client.CreateSquare(Square);
-                txtRespuestaCuadrado.Text = temp.Area.ToString();
-                txtRespuestaCuadradoPer.Text = temp.Perimeter.ToString();
-                MessageBox.Show("Proceso completado satisfactoriamente.");
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
         //TRIANGULO
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
@@ -93,29 +70,7 @@ namespace ClienteServicio
             panelCirculo.Visible = false;
             listaPaneles[1].BringToFront();
         }
-        private void bunifuFlatButton8_Click(object sender, EventArgs e)
-        {
-            lblTriang.Visible = true;
-            lblTriang2.Visible = true;
-            txtTriang.Visible = true;
-            txtTriangPer.Visible = true;
-            try
-            {
-                Triangle.SideA = (double)nudA.Value;
-                Triangle.SideB = (double)nudB.Value;
-                Triangle.SideC = (double)nudC.Value;
-                var temp = Client.CreateTriangle(Triangle);
-                txtTriang.Text = temp.Area.ToString();
-                txtTriangPer.Text = temp.Perimeter.ToString();
-                MessageBox.Show("Proceso completado satisfactoriamente.");
-
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
+     
 
         //CIRCULO
 
@@ -157,27 +112,7 @@ namespace ClienteServicio
             panelTriangulo.Visible = false;
             listaPaneles[3].BringToFront();
         }
-        private void bunifuFlatButton6_Click(object sender, EventArgs e)
-        {
-            lblRectang.Visible = true;
-            txtRespRect.Visible = true;
-            lblRectangulo2.Visible = true;
-            txtRespRectPer.Visible = true;
-            try
-            {
-                Rectangle.Width = (double)nudBaseRect.Value;
-                Rectangle.Height = (double)nudAlturaRect.Value;
-                var temp = Client.CreateRectangle(Rectangle);
-                txtRespRect.Text = temp.Area.ToString();
-                txtRespRectPer.Text = temp.Perimeter.ToString();
-                MessageBox.Show("Proceso completado satisfactoriamente.");
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
+    
 
         private void Form1_Load(object sender, EventArgs e)
         {
