@@ -39,6 +39,8 @@ namespace ClienteServicio
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelCuadrado = new System.Windows.Forms.Panel();
+            this.txtRespuestaCuadradoPer = new System.Windows.Forms.TextBox();
+            this.lblRespuestaCuadrado2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtRespuestaCuadrado = new System.Windows.Forms.TextBox();
             this.lblRespuestaCuadrado = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -50,6 +52,8 @@ namespace ClienteServicio
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panelRectangulo = new System.Windows.Forms.Panel();
+            this.txtRespRectPer = new System.Windows.Forms.TextBox();
+            this.lblRectangulo2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtRespRect = new System.Windows.Forms.TextBox();
             this.lblRectang = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -59,6 +63,8 @@ namespace ClienteServicio
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panelCirculo = new System.Windows.Forms.Panel();
+            this.txtRespCircPer = new System.Windows.Forms.TextBox();
+            this.lblAreaCirc2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtRespCirc = new System.Windows.Forms.TextBox();
             this.lblAreaCirc = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuFlatButton7 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -66,25 +72,17 @@ namespace ClienteServicio
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panelTriangulo = new System.Windows.Forms.Panel();
-            this.nudC = new System.Windows.Forms.NumericUpDown();
-            this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtTriangPer = new System.Windows.Forms.TextBox();
+            this.lblTriang2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtTriang = new System.Windows.Forms.TextBox();
             this.lblTriang = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuFlatButton8 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.nudB = new System.Windows.Forms.NumericUpDown();
-            this.nudA = new System.Windows.Forms.NumericUpDown();
+            this.nudWidth = new System.Windows.Forms.NumericUpDown();
+            this.nudHeight = new System.Windows.Forms.NumericUpDown();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.sidemenu = new System.Windows.Forms.Panel();
-            this.txtRespRectPer = new System.Windows.Forms.TextBox();
-            this.lblRectangulo2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtRespuestaCuadradoPer = new System.Windows.Forms.TextBox();
-            this.lblRespuestaCuadrado2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtRespCircPer = new System.Windows.Forms.TextBox();
-            this.lblAreaCirc2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtTriangPer = new System.Windows.Forms.TextBox();
-            this.lblTriang2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelCuadrado.SuspendLayout();
@@ -98,9 +96,8 @@ namespace ClienteServicio
             this.panelCirculo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRadio)).BeginInit();
             this.panelTriangulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWidth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHeight)).BeginInit();
             this.sidemenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,13 +127,14 @@ namespace ClienteServicio
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 35D;
             this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 82);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 101);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuFlatButton1.selected = true;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(250, 41);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(333, 50);
             this.bunifuFlatButton1.TabIndex = 4;
             this.bunifuFlatButton1.Text = "            Área del Cuadrado";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,10 +145,10 @@ namespace ClienteServicio
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(19, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(25, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(206, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(275, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -164,10 +162,10 @@ namespace ClienteServicio
             this.panel1.Controls.Add(this.bunifuFlatButton1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 55);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 68);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 336);
+            this.panel1.Size = new System.Drawing.Size(333, 413);
             this.panel1.TabIndex = 1;
             // 
             // bunifuFlatButton4
@@ -191,13 +189,14 @@ namespace ClienteServicio
             this.bunifuFlatButton4.IconVisible = true;
             this.bunifuFlatButton4.IconZoom = 35D;
             this.bunifuFlatButton4.IsTab = true;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 220);
+            this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 271);
+            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(250, 41);
+            this.bunifuFlatButton4.Size = new System.Drawing.Size(333, 50);
             this.bunifuFlatButton4.TabIndex = 7;
             this.bunifuFlatButton4.Text = "            Área del Rectángulo";
             this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -226,13 +225,14 @@ namespace ClienteServicio
             this.bunifuFlatButton3.IconVisible = true;
             this.bunifuFlatButton3.IconZoom = 35D;
             this.bunifuFlatButton3.IsTab = true;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(0, 172);
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(0, 212);
+            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(250, 41);
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(333, 50);
             this.bunifuFlatButton3.TabIndex = 6;
             this.bunifuFlatButton3.Text = "            Área del Círculo";
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -261,13 +261,14 @@ namespace ClienteServicio
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 35D;
             this.bunifuFlatButton2.IsTab = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 125);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 154);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(250, 41);
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(333, 50);
             this.bunifuFlatButton2.TabIndex = 5;
             this.bunifuFlatButton2.Text = "            Área del Triángulo";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -285,22 +286,46 @@ namespace ClienteServicio
             this.panelCuadrado.Controls.Add(this.nudLado);
             this.panelCuadrado.Controls.Add(this.bunifuCustomLabel3);
             this.panelCuadrado.Controls.Add(this.bunifuCustomLabel2);
-            this.panelCuadrado.Location = new System.Drawing.Point(58, 29);
-            this.panelCuadrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelCuadrado.Location = new System.Drawing.Point(77, 36);
+            this.panelCuadrado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCuadrado.Name = "panelCuadrado";
-            this.panelCuadrado.Size = new System.Drawing.Size(429, 266);
+            this.panelCuadrado.Size = new System.Drawing.Size(572, 327);
             this.panelCuadrado.TabIndex = 0;
             this.panelCuadrado.Visible = false;
+            // 
+            // txtRespuestaCuadradoPer
+            // 
+            this.txtRespuestaCuadradoPer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.txtRespuestaCuadradoPer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRespuestaCuadradoPer.ForeColor = System.Drawing.Color.White;
+            this.txtRespuestaCuadradoPer.Location = new System.Drawing.Point(335, 218);
+            this.txtRespuestaCuadradoPer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRespuestaCuadradoPer.Name = "txtRespuestaCuadradoPer";
+            this.txtRespuestaCuadradoPer.Size = new System.Drawing.Size(100, 32);
+            this.txtRespuestaCuadradoPer.TabIndex = 11;
+            this.txtRespuestaCuadradoPer.Visible = false;
+            // 
+            // lblRespuestaCuadrado2
+            // 
+            this.lblRespuestaCuadrado2.AutoSize = true;
+            this.lblRespuestaCuadrado2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRespuestaCuadrado2.ForeColor = System.Drawing.Color.White;
+            this.lblRespuestaCuadrado2.Location = new System.Drawing.Point(164, 223);
+            this.lblRespuestaCuadrado2.Name = "lblRespuestaCuadrado2";
+            this.lblRespuestaCuadrado2.Size = new System.Drawing.Size(135, 21);
+            this.lblRespuestaCuadrado2.TabIndex = 10;
+            this.lblRespuestaCuadrado2.Text = "El perímetro es:";
+            this.lblRespuestaCuadrado2.Visible = false;
             // 
             // txtRespuestaCuadrado
             // 
             this.txtRespuestaCuadrado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.txtRespuestaCuadrado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespuestaCuadrado.ForeColor = System.Drawing.Color.White;
-            this.txtRespuestaCuadrado.Location = new System.Drawing.Point(251, 212);
-            this.txtRespuestaCuadrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRespuestaCuadrado.Location = new System.Drawing.Point(335, 261);
+            this.txtRespuestaCuadrado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRespuestaCuadrado.Name = "txtRespuestaCuadrado";
-            this.txtRespuestaCuadrado.Size = new System.Drawing.Size(76, 27);
+            this.txtRespuestaCuadrado.Size = new System.Drawing.Size(100, 32);
             this.txtRespuestaCuadrado.TabIndex = 7;
             this.txtRespuestaCuadrado.Visible = false;
             // 
@@ -309,10 +334,9 @@ namespace ClienteServicio
             this.lblRespuestaCuadrado.AutoSize = true;
             this.lblRespuestaCuadrado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRespuestaCuadrado.ForeColor = System.Drawing.Color.White;
-            this.lblRespuestaCuadrado.Location = new System.Drawing.Point(123, 212);
-            this.lblRespuestaCuadrado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRespuestaCuadrado.Location = new System.Drawing.Point(164, 261);
             this.lblRespuestaCuadrado.Name = "lblRespuestaCuadrado";
-            this.lblRespuestaCuadrado.Size = new System.Drawing.Size(79, 19);
+            this.lblRespuestaCuadrado.Size = new System.Drawing.Size(95, 21);
             this.lblRespuestaCuadrado.TabIndex = 6;
             this.lblRespuestaCuadrado.Text = "El área es:";
             this.lblRespuestaCuadrado.Visible = false;
@@ -340,28 +364,29 @@ namespace ClienteServicio
             this.bunifuFlatButton5.IconVisible = true;
             this.bunifuFlatButton5.IconZoom = 40D;
             this.bunifuFlatButton5.IsTab = false;
-            this.bunifuFlatButton5.Location = new System.Drawing.Point(136, 118);
-            this.bunifuFlatButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton5.Location = new System.Drawing.Point(181, 145);
+            this.bunifuFlatButton5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton5.Name = "bunifuFlatButton5";
             this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
             this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton5.selected = false;
-            this.bunifuFlatButton5.Size = new System.Drawing.Size(161, 37);
+            this.bunifuFlatButton5.Size = new System.Drawing.Size(215, 46);
             this.bunifuFlatButton5.TabIndex = 5;
             this.bunifuFlatButton5.Text = "               Calcular";
             this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton5.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton5.Click += new System.EventHandler(this.bunifuFlatButton5_Click);
             // 
             // nudLado
             // 
             this.nudLado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.nudLado.ForeColor = System.Drawing.Color.Transparent;
-            this.nudLado.Location = new System.Drawing.Point(262, 70);
-            this.nudLado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudLado.Location = new System.Drawing.Point(349, 86);
+            this.nudLado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudLado.Name = "nudLado";
-            this.nudLado.Size = new System.Drawing.Size(90, 20);
+            this.nudLado.Size = new System.Drawing.Size(120, 22);
             this.nudLado.TabIndex = 3;
             // 
             // bunifuCustomLabel3
@@ -369,10 +394,9 @@ namespace ClienteServicio
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(28, 71);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(37, 87);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(218, 19);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(265, 21);
             this.bunifuCustomLabel3.TabIndex = 1;
             this.bunifuCustomLabel3.Text = "Ingrese el tamaño de los lados";
             // 
@@ -381,10 +405,9 @@ namespace ClienteServicio
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(42, 0);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(56, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(344, 26);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(434, 34);
             this.bunifuCustomLabel2.TabIndex = 0;
             this.bunifuCustomLabel2.Text = "Cálculo de área del Cuadrado";
             // 
@@ -396,9 +419,9 @@ namespace ClienteServicio
             this.panel2.Controls.Add(this.bunifuCustomLabel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(794, 55);
+            this.panel2.Size = new System.Drawing.Size(1059, 68);
             this.panel2.TabIndex = 2;
             // 
             // bunifuImageButton2
@@ -406,10 +429,10 @@ namespace ClienteServicio
             this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(770, 10);
-            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1027, 12);
+            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(15, 16);
+            this.bunifuImageButton2.Size = new System.Drawing.Size(20, 20);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton2.TabIndex = 5;
             this.bunifuImageButton2.TabStop = false;
@@ -419,10 +442,10 @@ namespace ClienteServicio
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(19, 16);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(25, 20);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox2.Size = new System.Drawing.Size(29, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -432,10 +455,9 @@ namespace ClienteServicio
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(40, 14);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(53, 17);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(201, 25);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(252, 34);
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Cálculo de Áreas";
             // 
@@ -451,23 +473,47 @@ namespace ClienteServicio
             this.panelRectangulo.Controls.Add(this.bunifuCustomLabel6);
             this.panelRectangulo.Controls.Add(this.bunifuCustomLabel7);
             this.panelRectangulo.Controls.Add(this.bunifuCustomLabel8);
-            this.panelRectangulo.Location = new System.Drawing.Point(58, 29);
-            this.panelRectangulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelRectangulo.Location = new System.Drawing.Point(77, 36);
+            this.panelRectangulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelRectangulo.Name = "panelRectangulo";
-            this.panelRectangulo.Size = new System.Drawing.Size(429, 262);
+            this.panelRectangulo.Size = new System.Drawing.Size(572, 322);
             this.panelRectangulo.TabIndex = 8;
             this.panelRectangulo.Visible = false;
             this.panelRectangulo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRectangulo_Paint);
+            // 
+            // txtRespRectPer
+            // 
+            this.txtRespRectPer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.txtRespRectPer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRespRectPer.ForeColor = System.Drawing.Color.White;
+            this.txtRespRectPer.Location = new System.Drawing.Point(303, 233);
+            this.txtRespRectPer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRespRectPer.Name = "txtRespRectPer";
+            this.txtRespRectPer.Size = new System.Drawing.Size(100, 32);
+            this.txtRespRectPer.TabIndex = 9;
+            this.txtRespRectPer.Visible = false;
+            // 
+            // lblRectangulo2
+            // 
+            this.lblRectangulo2.AutoSize = true;
+            this.lblRectangulo2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRectangulo2.ForeColor = System.Drawing.Color.White;
+            this.lblRectangulo2.Location = new System.Drawing.Point(132, 235);
+            this.lblRectangulo2.Name = "lblRectangulo2";
+            this.lblRectangulo2.Size = new System.Drawing.Size(135, 21);
+            this.lblRectangulo2.TabIndex = 8;
+            this.lblRectangulo2.Text = "El perímetro es:";
+            this.lblRectangulo2.Visible = false;
             // 
             // txtRespRect
             // 
             this.txtRespRect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.txtRespRect.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespRect.ForeColor = System.Drawing.Color.White;
-            this.txtRespRect.Location = new System.Drawing.Point(227, 220);
-            this.txtRespRect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRespRect.Location = new System.Drawing.Point(303, 271);
+            this.txtRespRect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRespRect.Name = "txtRespRect";
-            this.txtRespRect.Size = new System.Drawing.Size(76, 27);
+            this.txtRespRect.Size = new System.Drawing.Size(100, 32);
             this.txtRespRect.TabIndex = 7;
             this.txtRespRect.Visible = false;
             // 
@@ -476,10 +522,9 @@ namespace ClienteServicio
             this.lblRectang.AutoSize = true;
             this.lblRectang.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRectang.ForeColor = System.Drawing.Color.White;
-            this.lblRectang.Location = new System.Drawing.Point(118, 219);
-            this.lblRectang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRectang.Location = new System.Drawing.Point(157, 270);
             this.lblRectang.Name = "lblRectang";
-            this.lblRectang.Size = new System.Drawing.Size(79, 19);
+            this.lblRectang.Size = new System.Drawing.Size(95, 21);
             this.lblRectang.TabIndex = 6;
             this.lblRectang.Text = "El área es:";
             this.lblRectang.Visible = false;
@@ -507,14 +552,14 @@ namespace ClienteServicio
             this.bunifuFlatButton6.IconVisible = true;
             this.bunifuFlatButton6.IconZoom = 40D;
             this.bunifuFlatButton6.IsTab = false;
-            this.bunifuFlatButton6.Location = new System.Drawing.Point(132, 147);
-            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton6.Location = new System.Drawing.Point(176, 181);
+            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton6.Name = "bunifuFlatButton6";
             this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
             this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton6.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton6.selected = false;
-            this.bunifuFlatButton6.Size = new System.Drawing.Size(161, 37);
+            this.bunifuFlatButton6.Size = new System.Drawing.Size(215, 46);
             this.bunifuFlatButton6.TabIndex = 5;
             this.bunifuFlatButton6.Text = "               Calcular";
             this.bunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -525,20 +570,20 @@ namespace ClienteServicio
             // 
             this.nudAlturaRect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.nudAlturaRect.ForeColor = System.Drawing.Color.Transparent;
-            this.nudAlturaRect.Location = new System.Drawing.Point(214, 86);
-            this.nudAlturaRect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudAlturaRect.Location = new System.Drawing.Point(285, 106);
+            this.nudAlturaRect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudAlturaRect.Name = "nudAlturaRect";
-            this.nudAlturaRect.Size = new System.Drawing.Size(90, 20);
+            this.nudAlturaRect.Size = new System.Drawing.Size(120, 22);
             this.nudAlturaRect.TabIndex = 4;
             // 
             // nudBaseRect
             // 
             this.nudBaseRect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.nudBaseRect.ForeColor = System.Drawing.Color.Transparent;
-            this.nudBaseRect.Location = new System.Drawing.Point(214, 53);
-            this.nudBaseRect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudBaseRect.Location = new System.Drawing.Point(285, 65);
+            this.nudBaseRect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudBaseRect.Name = "nudBaseRect";
-            this.nudBaseRect.Size = new System.Drawing.Size(90, 20);
+            this.nudBaseRect.Size = new System.Drawing.Size(120, 22);
             this.nudBaseRect.TabIndex = 3;
             // 
             // bunifuCustomLabel6
@@ -546,10 +591,9 @@ namespace ClienteServicio
             this.bunifuCustomLabel6.AutoSize = true;
             this.bunifuCustomLabel6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(92, 83);
-            this.bunifuCustomLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(123, 102);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(119, 19);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(144, 21);
             this.bunifuCustomLabel6.TabIndex = 2;
             this.bunifuCustomLabel6.Text = "Ingrese la altura";
             // 
@@ -558,10 +602,9 @@ namespace ClienteServicio
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel7.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(98, 54);
-            this.bunifuCustomLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(131, 66);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(112, 19);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(137, 21);
             this.bunifuCustomLabel7.TabIndex = 1;
             this.bunifuCustomLabel7.Text = "Ingrese la base";
             // 
@@ -570,10 +613,9 @@ namespace ClienteServicio
             this.bunifuCustomLabel8.AutoSize = true;
             this.bunifuCustomLabel8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(42, 0);
-            this.bunifuCustomLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(56, 0);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(356, 26);
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(451, 34);
             this.bunifuCustomLabel8.TabIndex = 0;
             this.bunifuCustomLabel8.Text = "Cálculo de área del Rectángulo";
             // 
@@ -587,22 +629,46 @@ namespace ClienteServicio
             this.panelCirculo.Controls.Add(this.nudRadio);
             this.panelCirculo.Controls.Add(this.bunifuCustomLabel10);
             this.panelCirculo.Controls.Add(this.bunifuCustomLabel11);
-            this.panelCirculo.Location = new System.Drawing.Point(58, 29);
-            this.panelCirculo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelCirculo.Location = new System.Drawing.Point(77, 36);
+            this.panelCirculo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCirculo.Name = "panelCirculo";
-            this.panelCirculo.Size = new System.Drawing.Size(429, 266);
+            this.panelCirculo.Size = new System.Drawing.Size(572, 327);
             this.panelCirculo.TabIndex = 9;
             this.panelCirculo.Visible = false;
+            // 
+            // txtRespCircPer
+            // 
+            this.txtRespCircPer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.txtRespCircPer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRespCircPer.ForeColor = System.Drawing.Color.White;
+            this.txtRespCircPer.Location = new System.Drawing.Point(319, 198);
+            this.txtRespCircPer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRespCircPer.Name = "txtRespCircPer";
+            this.txtRespCircPer.Size = new System.Drawing.Size(100, 32);
+            this.txtRespCircPer.TabIndex = 13;
+            this.txtRespCircPer.Visible = false;
+            // 
+            // lblAreaCirc2
+            // 
+            this.lblAreaCirc2.AutoSize = true;
+            this.lblAreaCirc2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAreaCirc2.ForeColor = System.Drawing.Color.White;
+            this.lblAreaCirc2.Location = new System.Drawing.Point(148, 203);
+            this.lblAreaCirc2.Name = "lblAreaCirc2";
+            this.lblAreaCirc2.Size = new System.Drawing.Size(135, 21);
+            this.lblAreaCirc2.TabIndex = 12;
+            this.lblAreaCirc2.Text = "El perímetro es:";
+            this.lblAreaCirc2.Visible = false;
             // 
             // txtRespCirc
             // 
             this.txtRespCirc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.txtRespCirc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespCirc.ForeColor = System.Drawing.Color.White;
-            this.txtRespCirc.Location = new System.Drawing.Point(239, 195);
-            this.txtRespCirc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRespCirc.Location = new System.Drawing.Point(319, 240);
+            this.txtRespCirc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRespCirc.Name = "txtRespCirc";
-            this.txtRespCirc.Size = new System.Drawing.Size(76, 27);
+            this.txtRespCirc.Size = new System.Drawing.Size(100, 32);
             this.txtRespCirc.TabIndex = 7;
             this.txtRespCirc.Visible = false;
             // 
@@ -611,10 +677,9 @@ namespace ClienteServicio
             this.lblAreaCirc.AutoSize = true;
             this.lblAreaCirc.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAreaCirc.ForeColor = System.Drawing.Color.White;
-            this.lblAreaCirc.Location = new System.Drawing.Point(111, 199);
-            this.lblAreaCirc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAreaCirc.Location = new System.Drawing.Point(148, 245);
             this.lblAreaCirc.Name = "lblAreaCirc";
-            this.lblAreaCirc.Size = new System.Drawing.Size(79, 19);
+            this.lblAreaCirc.Size = new System.Drawing.Size(95, 21);
             this.lblAreaCirc.TabIndex = 6;
             this.lblAreaCirc.Text = "El área es:";
             this.lblAreaCirc.Visible = false;
@@ -642,14 +707,14 @@ namespace ClienteServicio
             this.bunifuFlatButton7.IconVisible = true;
             this.bunifuFlatButton7.IconZoom = 40D;
             this.bunifuFlatButton7.IsTab = false;
-            this.bunifuFlatButton7.Location = new System.Drawing.Point(132, 117);
-            this.bunifuFlatButton7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton7.Location = new System.Drawing.Point(176, 144);
+            this.bunifuFlatButton7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton7.Name = "bunifuFlatButton7";
             this.bunifuFlatButton7.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
             this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton7.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton7.selected = false;
-            this.bunifuFlatButton7.Size = new System.Drawing.Size(161, 37);
+            this.bunifuFlatButton7.Size = new System.Drawing.Size(215, 46);
             this.bunifuFlatButton7.TabIndex = 5;
             this.bunifuFlatButton7.Text = "               Calcular";
             this.bunifuFlatButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -661,10 +726,10 @@ namespace ClienteServicio
             // 
             this.nudRadio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.nudRadio.ForeColor = System.Drawing.Color.Transparent;
-            this.nudRadio.Location = new System.Drawing.Point(214, 76);
-            this.nudRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudRadio.Location = new System.Drawing.Point(285, 94);
+            this.nudRadio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudRadio.Name = "nudRadio";
-            this.nudRadio.Size = new System.Drawing.Size(90, 20);
+            this.nudRadio.Size = new System.Drawing.Size(120, 22);
             this.nudRadio.TabIndex = 3;
             // 
             // bunifuCustomLabel10
@@ -672,10 +737,9 @@ namespace ClienteServicio
             this.bunifuCustomLabel10.AutoSize = true;
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel10.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(95, 76);
-            this.bunifuCustomLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(127, 94);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(113, 19);
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(137, 21);
             this.bunifuCustomLabel10.TabIndex = 1;
             this.bunifuCustomLabel10.Text = "Ingrese el radio";
             // 
@@ -684,10 +748,9 @@ namespace ClienteServicio
             this.bunifuCustomLabel11.AutoSize = true;
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(42, 0);
-            this.bunifuCustomLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(56, 0);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
-            this.bunifuCustomLabel11.Size = new System.Drawing.Size(308, 26);
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(394, 34);
             this.bunifuCustomLabel11.TabIndex = 0;
             this.bunifuCustomLabel11.Text = "Cálculo de área del Círculo";
             // 
@@ -695,55 +758,54 @@ namespace ClienteServicio
             // 
             this.panelTriangulo.Controls.Add(this.txtTriangPer);
             this.panelTriangulo.Controls.Add(this.lblTriang2);
-            this.panelTriangulo.Controls.Add(this.nudC);
-            this.panelTriangulo.Controls.Add(this.bunifuCustomLabel13);
             this.panelTriangulo.Controls.Add(this.txtTriang);
             this.panelTriangulo.Controls.Add(this.lblTriang);
             this.panelTriangulo.Controls.Add(this.bunifuFlatButton8);
-            this.panelTriangulo.Controls.Add(this.nudB);
-            this.panelTriangulo.Controls.Add(this.nudA);
+            this.panelTriangulo.Controls.Add(this.nudWidth);
+            this.panelTriangulo.Controls.Add(this.nudHeight);
             this.panelTriangulo.Controls.Add(this.bunifuCustomLabel5);
             this.panelTriangulo.Controls.Add(this.bunifuCustomLabel9);
             this.panelTriangulo.Controls.Add(this.bunifuCustomLabel12);
-            this.panelTriangulo.Location = new System.Drawing.Point(58, 29);
-            this.panelTriangulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTriangulo.Location = new System.Drawing.Point(77, 36);
+            this.panelTriangulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTriangulo.Name = "panelTriangulo";
-            this.panelTriangulo.Size = new System.Drawing.Size(429, 266);
+            this.panelTriangulo.Size = new System.Drawing.Size(572, 327);
             this.panelTriangulo.TabIndex = 9;
             this.panelTriangulo.Visible = false;
             // 
-            // nudC
+            // txtTriangPer
             // 
-            this.nudC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.nudC.Cursor = System.Windows.Forms.Cursors.Default;
-            this.nudC.ForeColor = System.Drawing.Color.Transparent;
-            this.nudC.Location = new System.Drawing.Point(227, 117);
-            this.nudC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.nudC.Name = "nudC";
-            this.nudC.Size = new System.Drawing.Size(90, 20);
-            this.nudC.TabIndex = 9;
+            this.txtTriangPer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.txtTriangPer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTriangPer.ForeColor = System.Drawing.Color.White;
+            this.txtTriangPer.Location = new System.Drawing.Point(303, 233);
+            this.txtTriangPer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTriangPer.Name = "txtTriangPer";
+            this.txtTriangPer.Size = new System.Drawing.Size(100, 32);
+            this.txtTriangPer.TabIndex = 15;
+            this.txtTriangPer.Visible = false;
             // 
-            // bunifuCustomLabel13
+            // lblTriang2
             // 
-            this.bunifuCustomLabel13.AutoSize = true;
-            this.bunifuCustomLabel13.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel13.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(92, 118);
-            this.bunifuCustomLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
-            this.bunifuCustomLabel13.Size = new System.Drawing.Size(124, 19);
-            this.bunifuCustomLabel13.TabIndex = 8;
-            this.bunifuCustomLabel13.Text = "Ingrese el lado C";
+            this.lblTriang2.AutoSize = true;
+            this.lblTriang2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTriang2.ForeColor = System.Drawing.Color.White;
+            this.lblTriang2.Location = new System.Drawing.Point(132, 238);
+            this.lblTriang2.Name = "lblTriang2";
+            this.lblTriang2.Size = new System.Drawing.Size(135, 21);
+            this.lblTriang2.TabIndex = 14;
+            this.lblTriang2.Text = "El perímetro es:";
+            this.lblTriang2.Visible = false;
             // 
             // txtTriang
             // 
             this.txtTriang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.txtTriang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTriang.ForeColor = System.Drawing.Color.White;
-            this.txtTriang.Location = new System.Drawing.Point(227, 220);
-            this.txtTriang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTriang.Location = new System.Drawing.Point(303, 271);
+            this.txtTriang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTriang.Name = "txtTriang";
-            this.txtTriang.Size = new System.Drawing.Size(76, 27);
+            this.txtTriang.Size = new System.Drawing.Size(100, 32);
             this.txtTriang.TabIndex = 7;
             this.txtTriang.Visible = false;
             // 
@@ -752,10 +814,9 @@ namespace ClienteServicio
             this.lblTriang.AutoSize = true;
             this.lblTriang.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTriang.ForeColor = System.Drawing.Color.White;
-            this.lblTriang.Location = new System.Drawing.Point(99, 224);
-            this.lblTriang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTriang.Location = new System.Drawing.Point(132, 276);
             this.lblTriang.Name = "lblTriang";
-            this.lblTriang.Size = new System.Drawing.Size(79, 19);
+            this.lblTriang.Size = new System.Drawing.Size(95, 21);
             this.lblTriang.TabIndex = 6;
             this.lblTriang.Text = "El área es:";
             this.lblTriang.Visible = false;
@@ -783,202 +844,100 @@ namespace ClienteServicio
             this.bunifuFlatButton8.IconVisible = true;
             this.bunifuFlatButton8.IconZoom = 40D;
             this.bunifuFlatButton8.IsTab = false;
-            this.bunifuFlatButton8.Location = new System.Drawing.Point(128, 147);
-            this.bunifuFlatButton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton8.Location = new System.Drawing.Point(171, 181);
+            this.bunifuFlatButton8.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton8.Name = "bunifuFlatButton8";
             this.bunifuFlatButton8.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
             this.bunifuFlatButton8.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton8.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton8.selected = false;
-            this.bunifuFlatButton8.Size = new System.Drawing.Size(161, 37);
+            this.bunifuFlatButton8.Size = new System.Drawing.Size(215, 46);
             this.bunifuFlatButton8.TabIndex = 5;
             this.bunifuFlatButton8.Text = "               Calcular";
             this.bunifuFlatButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton8.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton8.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton8.Click += new System.EventHandler(this.bunifuFlatButton8_Click);
             // 
-            // nudB
+            // nudWidth
             // 
-            this.nudB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.nudB.ForeColor = System.Drawing.Color.Transparent;
-            this.nudB.Location = new System.Drawing.Point(227, 86);
-            this.nudB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.nudB.Name = "nudB";
-            this.nudB.Size = new System.Drawing.Size(90, 20);
-            this.nudB.TabIndex = 4;
+            this.nudWidth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.nudWidth.ForeColor = System.Drawing.Color.Transparent;
+            this.nudWidth.Location = new System.Drawing.Point(303, 106);
+            this.nudWidth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudWidth.Name = "nudWidth";
+            this.nudWidth.Size = new System.Drawing.Size(120, 22);
+            this.nudWidth.TabIndex = 4;
             // 
-            // nudA
+            // nudHeight
             // 
-            this.nudA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.nudA.ForeColor = System.Drawing.Color.Transparent;
-            this.nudA.Location = new System.Drawing.Point(227, 53);
-            this.nudA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.nudA.Name = "nudA";
-            this.nudA.Size = new System.Drawing.Size(90, 20);
-            this.nudA.TabIndex = 3;
+            this.nudHeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.nudHeight.ForeColor = System.Drawing.Color.Transparent;
+            this.nudHeight.Location = new System.Drawing.Point(303, 65);
+            this.nudHeight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudHeight.Name = "nudHeight";
+            this.nudHeight.Size = new System.Drawing.Size(120, 22);
+            this.nudHeight.TabIndex = 3;
             // 
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(92, 87);
-            this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(123, 107);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(121, 19);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(135, 21);
             this.bunifuCustomLabel5.TabIndex = 2;
-            this.bunifuCustomLabel5.Text = "Ingrese el lado B";
+            this.bunifuCustomLabel5.Text = "Ingrese la Base";
             // 
             // bunifuCustomLabel9
             // 
             this.bunifuCustomLabel9.AutoSize = true;
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(92, 54);
-            this.bunifuCustomLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(123, 66);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(122, 19);
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(145, 21);
             this.bunifuCustomLabel9.TabIndex = 1;
-            this.bunifuCustomLabel9.Text = "Ingrese el lado A";
+            this.bunifuCustomLabel9.Text = "Ingrese la Altura";
             // 
             // bunifuCustomLabel12
             // 
             this.bunifuCustomLabel12.AutoSize = true;
             this.bunifuCustomLabel12.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel12.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(42, 0);
-            this.bunifuCustomLabel12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(56, 0);
             this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
-            this.bunifuCustomLabel12.Size = new System.Drawing.Size(329, 26);
+            this.bunifuCustomLabel12.Size = new System.Drawing.Size(419, 34);
             this.bunifuCustomLabel12.TabIndex = 0;
             this.bunifuCustomLabel12.Text = "Cálculo de área del Triángulo";
             // 
             // sidemenu
             // 
+            this.sidemenu.Controls.Add(this.panelTriangulo);
             this.sidemenu.Controls.Add(this.panelRectangulo);
             this.sidemenu.Controls.Add(this.panelCirculo);
-            this.sidemenu.Controls.Add(this.panelTriangulo);
             this.sidemenu.Controls.Add(this.panelCuadrado);
             this.sidemenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sidemenu.Location = new System.Drawing.Point(250, 55);
-            this.sidemenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sidemenu.Location = new System.Drawing.Point(333, 68);
+            this.sidemenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidemenu.Name = "sidemenu";
-            this.sidemenu.Size = new System.Drawing.Size(544, 336);
+            this.sidemenu.Size = new System.Drawing.Size(726, 413);
             this.sidemenu.TabIndex = 3;
             this.sidemenu.Paint += new System.Windows.Forms.PaintEventHandler(this.sidemenu_Paint);
             // 
-            // txtRespRectPer
-            // 
-            this.txtRespRectPer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.txtRespRectPer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespRectPer.ForeColor = System.Drawing.Color.White;
-            this.txtRespRectPer.Location = new System.Drawing.Point(227, 189);
-            this.txtRespRectPer.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRespRectPer.Name = "txtRespRectPer";
-            this.txtRespRectPer.Size = new System.Drawing.Size(76, 27);
-            this.txtRespRectPer.TabIndex = 9;
-            this.txtRespRectPer.Visible = false;
-            // 
-            // lblRectangulo2
-            // 
-            this.lblRectangulo2.AutoSize = true;
-            this.lblRectangulo2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRectangulo2.ForeColor = System.Drawing.Color.White;
-            this.lblRectangulo2.Location = new System.Drawing.Point(99, 191);
-            this.lblRectangulo2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRectangulo2.Name = "lblRectangulo2";
-            this.lblRectangulo2.Size = new System.Drawing.Size(112, 19);
-            this.lblRectangulo2.TabIndex = 8;
-            this.lblRectangulo2.Text = "El perímetro es:";
-            this.lblRectangulo2.Visible = false;
-            // 
-            // txtRespuestaCuadradoPer
-            // 
-            this.txtRespuestaCuadradoPer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.txtRespuestaCuadradoPer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespuestaCuadradoPer.ForeColor = System.Drawing.Color.White;
-            this.txtRespuestaCuadradoPer.Location = new System.Drawing.Point(251, 177);
-            this.txtRespuestaCuadradoPer.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRespuestaCuadradoPer.Name = "txtRespuestaCuadradoPer";
-            this.txtRespuestaCuadradoPer.Size = new System.Drawing.Size(76, 27);
-            this.txtRespuestaCuadradoPer.TabIndex = 11;
-            this.txtRespuestaCuadradoPer.Visible = false;
-            // 
-            // lblRespuestaCuadrado2
-            // 
-            this.lblRespuestaCuadrado2.AutoSize = true;
-            this.lblRespuestaCuadrado2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRespuestaCuadrado2.ForeColor = System.Drawing.Color.White;
-            this.lblRespuestaCuadrado2.Location = new System.Drawing.Point(123, 181);
-            this.lblRespuestaCuadrado2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRespuestaCuadrado2.Name = "lblRespuestaCuadrado2";
-            this.lblRespuestaCuadrado2.Size = new System.Drawing.Size(112, 19);
-            this.lblRespuestaCuadrado2.TabIndex = 10;
-            this.lblRespuestaCuadrado2.Text = "El perímetro es:";
-            this.lblRespuestaCuadrado2.Visible = false;
-            // 
-            // txtRespCircPer
-            // 
-            this.txtRespCircPer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.txtRespCircPer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespCircPer.ForeColor = System.Drawing.Color.White;
-            this.txtRespCircPer.Location = new System.Drawing.Point(239, 161);
-            this.txtRespCircPer.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRespCircPer.Name = "txtRespCircPer";
-            this.txtRespCircPer.Size = new System.Drawing.Size(76, 27);
-            this.txtRespCircPer.TabIndex = 13;
-            this.txtRespCircPer.Visible = false;
-            // 
-            // lblAreaCirc2
-            // 
-            this.lblAreaCirc2.AutoSize = true;
-            this.lblAreaCirc2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAreaCirc2.ForeColor = System.Drawing.Color.White;
-            this.lblAreaCirc2.Location = new System.Drawing.Point(111, 165);
-            this.lblAreaCirc2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAreaCirc2.Name = "lblAreaCirc2";
-            this.lblAreaCirc2.Size = new System.Drawing.Size(112, 19);
-            this.lblAreaCirc2.TabIndex = 12;
-            this.lblAreaCirc2.Text = "El perímetro es:";
-            this.lblAreaCirc2.Visible = false;
-            // 
-            // txtTriangPer
-            // 
-            this.txtTriangPer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.txtTriangPer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTriangPer.ForeColor = System.Drawing.Color.White;
-            this.txtTriangPer.Location = new System.Drawing.Point(227, 189);
-            this.txtTriangPer.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTriangPer.Name = "txtTriangPer";
-            this.txtTriangPer.Size = new System.Drawing.Size(76, 27);
-            this.txtTriangPer.TabIndex = 15;
-            this.txtTriangPer.Visible = false;
-            // 
-            // lblTriang2
-            // 
-            this.lblTriang2.AutoSize = true;
-            this.lblTriang2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTriang2.ForeColor = System.Drawing.Color.White;
-            this.lblTriang2.Location = new System.Drawing.Point(99, 193);
-            this.lblTriang2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTriang2.Name = "lblTriang2";
-            this.lblTriang2.Size = new System.Drawing.Size(112, 19);
-            this.lblTriang2.TabIndex = 14;
-            this.lblTriang2.Text = "El perímetro es:";
-            this.lblTriang2.Visible = false;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(794, 391);
+            this.ClientSize = new System.Drawing.Size(1059, 481);
             this.Controls.Add(this.sidemenu);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1000,9 +959,8 @@ namespace ClienteServicio
             ((System.ComponentModel.ISupportInitialize)(this.nudRadio)).EndInit();
             this.panelTriangulo.ResumeLayout(false);
             this.panelTriangulo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHeight)).EndInit();
             this.sidemenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1046,13 +1004,11 @@ namespace ClienteServicio
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
         private System.Windows.Forms.Panel panelTriangulo;
-        private System.Windows.Forms.NumericUpDown nudC;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel13;
         private System.Windows.Forms.TextBox txtTriang;
         private Bunifu.Framework.UI.BunifuCustomLabel lblTriang;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton8;
-        private System.Windows.Forms.NumericUpDown nudB;
-        private System.Windows.Forms.NumericUpDown nudA;
+        private System.Windows.Forms.NumericUpDown nudWidth;
+        private System.Windows.Forms.NumericUpDown nudHeight;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel12;

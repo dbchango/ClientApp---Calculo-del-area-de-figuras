@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Http;
+using Newtonsoft.Json;
+using ClienteServicio.Models;
+using ClienteServicio.Services;
 
 namespace ClienteServicio
 {
@@ -14,12 +18,84 @@ namespace ClienteServicio
     {
         List<Panel> listaPaneles = new List<Panel>();
         int index;
-        AreasService.Service1Client Client = new AreasService.Service1Client("BasicHttpsBinding_IService1");
-        AreasService.RingDTO Ring = new AreasService.RingDTO();
+        public AreasService.Service1Client Client = new AreasService.Service1Client("BasicHttpsBinding_IService1");
+        public AreasService.RingDTO Ring = new AreasService.RingDTO();
+        
+        public Square squareG;
+        public Triangle triangleG;
+        public readonly HttpClient client = new HttpClient();
+        public static SquaresServices sqService;
+        public static TrianglesServices trService;
+        
 
-        public Form1()
+        public async void ListSquares()
         {
+            dynamic result = await sqService.ListSquares();
+            Object myObject = result;
+            if(myObject.GetType().Name == "String")
+            {
+                MessageBox.Show(result);
+            }
+            else
+            {
+                Console.WriteLine("Elementos listados.");
+            }
+        }
+
+        public async void ListTriangles()
+        {
+            dynamic result = await trService.ListTriangles();
+            Object myObject = result;
+            if(myObject.GetType().Name == "String")
+            {
+                MessageBox.Show(result);
+            }
+            else
+            {
+                Console.WriteLine("Triangulos listados.");
+            }
+        }
+
+        public async Task<dynamic> CreateSquare(Cuadrado sq)
+        {
+            dynamic result = await sqService.CreateSquares(sq);
+            Object myObject = result;
+            if (myObject.GetType().Name == "String")
+            {
+                MessageBox.Show(result);
+                return null;
+            }
+            else
+            {     
+                MessageBox.Show("Elemento creado con el id: "+result.Id);
+                squareG = result;
+                return result;
+            }
+        }
+
+        public async Task<dynamic> CreateTriangle(Triangle tr)
+        {
+            dynamic result = await trService.CreateTriangle(tr);
+            Object myObject = result;
+            if (myObject.GetType().Name == "String")
+            {
+                MessageBox.Show(result);
+                return null;
+            }
+            else
+            {
+                MessageBox.Show("Elemento creado con el id: " + result.Id);
+                triangleG = result;
+                return result;
+            }
+        }
+
+        public  Form1()
+        {
+            sqService = new SquaresServices(client);
+            trService = new TrianglesServices(client);
             InitializeComponent();
+            ListTriangles();
             lblAreaCirc.Visible = false;
             lblRectang.Visible = false;
             lblRespuestaCuadrado.Visible = false;
@@ -61,6 +137,22 @@ namespace ClienteServicio
             listaPaneles[0].BringToFront();
         }
 
+        private async void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+            Cuadrado square = new Cuadrado();
+            square.lado = (float)nudLado.Value;
+            dynamic result = await CreateSquare(square);
+            Object myObject = result;
+            lblRespuestaCuadrado.Visible = true;
+            lblRespuestaCuadrado2.Visible = true;
+            txtRespuestaCuadrado.Visible = true;
+            txtRespuestaCuadradoPer.Visible = true;
+            txtRespuestaCuadrado.Text = squareG.Area.ToString();
+            txtRespuestaCuadradoPer.Text = squareG.Perimeter.ToString();
+            
+
+        }
+
         //TRIANGULO
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
@@ -70,7 +162,21 @@ namespace ClienteServicio
             panelCirculo.Visible = false;
             listaPaneles[1].BringToFront();
         }
-     
+
+        private async void bunifuFlatButton8_Click(object sender, EventArgs e)
+        {
+            lblTriang.Visible = true;
+            lblTriang2.Visible = true;
+            txtTriang.Visible = true;
+            txtTriangPer.Visible = true;
+            Triangle triangle = new Triangle();
+            triangle.Width = (long)nudWidth.Value;
+            triangle.Height = (long)nudHeight.Value;
+            dynamic result = await CreateTriangle(triangle);
+            txtTriang.Text = triangleG.Area.ToString();
+            txtTriangPer.Text = triangleG.Perimeter.ToString();
+        }
+
 
         //CIRCULO
 
@@ -127,5 +233,7 @@ namespace ClienteServicio
         {
 
         }
+
+        
     }
 }
